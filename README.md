@@ -1,39 +1,21 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# command_runner
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/tools/pub/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A simple and extensible command-line argument parser for Dart applications. Build CLI tools with commands, flags, and options.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- 🔧 **Commands** – organize your CLI into subcommands (like `git commit`, `git push`)
+- 🚩 **Flags** – boolean options (e.g., `--verbose`, `-v`)
+- 📝 **Options** – key-value arguments (e.g., `--output=file.txt`, `-o file.txt`)
+- 📖 **Auto‑generated help** – built-in `HelpCommand` with verbose output
+- 🔒 **Immutable views** – protects internal state with `UnmodifiableSetView`
+- ⚡ **Async support** – commands can return `FutureOr`
 
-## Getting started
+## Quick Start
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+### 1. Add dependency
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```yaml
+dependencies:
+  command_runner:
+    git: https://github.com/krs83/command_runner.git
